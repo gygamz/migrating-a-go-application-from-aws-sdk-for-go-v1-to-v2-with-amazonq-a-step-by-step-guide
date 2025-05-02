@@ -45,7 +45,7 @@ endif
 
 # Get dependencies (if needed)
 get-deps:
-	go mod tidy
+go mod tidy
 	
 
 # Phony targets

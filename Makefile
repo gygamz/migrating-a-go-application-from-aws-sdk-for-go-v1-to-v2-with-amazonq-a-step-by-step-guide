@@ -45,11 +45,8 @@ endif
 
 # Get dependencies (if needed)
 get-deps:
-	go get github.com/aws/aws-sdk-go-v2
-	go get github.com/aws/aws-sdk-go-v2/aws
-	go get github.com/aws/aws-sdk-go-v2/config
-	go get github.com/aws/aws-sdk-go-v2/service/dynamodb
-	go get github.com/aws/aws-sdk-go-v2/service/dynamodb/types
+	go mod tidy
+	
 
 # Phony targets
 .PHONY: all clean get-deps $(LAMBDAS)
